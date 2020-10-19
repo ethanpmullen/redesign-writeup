@@ -1,14 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <main role="main" class="main">
+      <h1>Responsive Redesign</h1>
+      <h3>Objective</h3>
+      <p>
+        Analyze one page of a website based on usability and accessibility.
+        Then, draft and build and improved version.
+      </p>
+
+      <h3>The Website</h3>
+      <p>
+        <a href="http://www.afpls.org/">Fulton County Library System</a> is the
+        central hub for 34 libraries in Fulton County and Atlanta, Georgia.
+      </p>
+      <img class="img-fluid" src="images/afpls.png" />
+
+      <h3>Analysis</h3>
+
+      <dt>Goal of website</dt>
+      <dd>Easy access to many resources from the home page.</dd>
+
+      <h5>Usability Problems</h5>
+
+      <dd>
+        The page is cluttered with information
+        <ul>
+          <li>Too many pictures</li>
+          <li>Color palette isn't coordinated</li>
+          <li>
+            Lack of contrast (both the white and black text on light green
+            background are hard to read
+          </li>
+          <li>Headers don’t stand out against pictures (databases, etc.)</li>
+          <li>Column sizes are inconsistent</li>
+          <li>Use of pictures of text instead of text (left column)</li>
+        </ul>
+      </dd>
+      <dt>Learnability</dt>
+      <dd>
+        Similar action items are not grouped together
+        <ul>
+          <li>
+            For example locations, event calendar, services, and about are all
+            navigation bar menu options, news is a box on the homepage
+          </li>
+          <li>
+            Within "books and materials", my account and catalog search are
+            grouped together
+          </li>
+        </ul>
+      </dd>
+      <dt>Memorability</dt>
+      <dd>
+        Heavily used actions are not emphasized
+        <ul>
+          <li>Coronavirus updates are at the bottom</li>
+          <li>Account info is in a menu item and not at the top as expected</li>
+          <li>Search is in the middle of the page, should be at the top</li>
+        </ul>
+      </dd>
+
+      <dt>Efficiency</dt>
+
+      <dd>
+        Navigation is difficult
+        <ul>
+          <li>Navigation is not cohesive (sidebars, nav bars, etc)</li>
+          <li>
+            Use of drop down menu on top right instead of intuitive design
+          </li>
+        </ul>
+      </dd>
+
+      <h5>Accessibility Concerns</h5>
+      <dd>
+        The Fulton County Library System website has multiple accessibility
+        errors and alerts according to WebAIM WAVE. There are a few instances of
+        text with very low contrast, which I noticed but was interested that it
+        was quantifiably hard to read. Some of the errors were instances of bad
+        practice I didn’t notice because I don’t use a screen reader, for
+        example: layout table, redundant title text, and redundant links, et
+        cetera. In general, the clutter of the website that is apparent when
+        looking at it becomes an accessibility concern because it is hard for
+        people with different accessibility needs.
+      </dd>
+
+      <h3>Low-Fi Mockup</h3>
+      <p>
+        Layouts consolidate navigation from the original website, focusing on
+        the navigation bar at the top and removing the drop down menus and
+        sidebars. This makes the website more usable because all actions are
+        accessible from the nav bar, so the user knows where to look.
+        Additionally, other items of interest are given more emphasis on the
+        home page (for example, databse links, news, and search).
+      </p>
+      <img class="img-fluid" src="images/low-fi.png" />
+
+      <h3>Visual Style Guide</h3>
+      <p>
+        Color palette was taken from the Fulton County logo (blue and orange),
+        yet the orange was shifted toward yellow to be more timeless. Typography
+        was chosen to be cohesive to be lively and visually interesting yet
+        confident and sleek.
+      </p>
+      <img class="img-fluid" src="images/visual-style.png" />
+    </main>
   </body>
 </html>

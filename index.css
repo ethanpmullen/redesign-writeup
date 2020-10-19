@@ -1,1 +1,16 @@
 /* Put your style information here! */
+
+.main {
+  max-width: 650px;
+  margin: auto;
+  padding: 10px;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+.tablet {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+}
